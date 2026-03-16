@@ -1,11 +1,8 @@
-/* Set the global variables for everything. Change these to use your own fonts and colours. */
 :root {
-
-    /* Set sans-serif & mono fonts */
     --sans-font: Roboto, "Helvetica Neue", sans-serif;
     --mono-font: "Ubuntu Mono", monospace;
 
-    /* Body font size. By default, effectively 18.4px, based on 16px as 'root em' */
+    /* Body font size. */
     --base-fontsize: 1.5rem;
 
     /* Major third scale progression - see https://type-scale.com/ */
@@ -28,18 +25,11 @@
     --disabled: #EFEFEF;
 }
 
-@media (max-width: 800px) {
-    :root {
-        --base-fontsize: 3rem;
-    }
-}
-
 html {
     /* Set the font globally */
     font-family: var(--mono-font);
 }
 
-/* Make the body a nice central block */
 body {
     color: var(--text);
     background: var(--bg);
@@ -56,7 +46,6 @@ body {
     word-break: break-word;
     overflow-wrap: break-word;
 }
-
 
 header,
 nav,
@@ -114,7 +103,6 @@ nav a {
     text-align: left;
     float: left;
 }
-
 
 #nav-right {
     width: 64%;
